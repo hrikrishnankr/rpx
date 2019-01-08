@@ -12,7 +12,7 @@ const config = {
 
     entry: {
         // Main entry point of our app
-        app: resolve(__dirname, '..', 'src', 'main.js'),
+        app: resolve(__dirname, '..', 'src', 'main.ts'),
     },
 
     output: {
@@ -27,7 +27,7 @@ const config = {
     },
 
     resolve: {
-        extensions: ['*', '.js'],
+        extensions: ['*', '.js','.ts','.json'],
         modules: [
             resolve(__dirname, '..', 'node_modules'),
         ],
@@ -35,7 +35,7 @@ const config = {
 
     module: {
         rules: [{
-            test: /\.js$/,
+            test: /\.js|\.ts$/,
             loader: 'babel-loader',
             exclude: /node_modules/,
         },
