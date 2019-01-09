@@ -75,7 +75,10 @@ const config = {
             options: {
                 name: 'videos/[name].[hash:7].[ext]'
             }
-        }]
+        }, {
+            "test": /\.html$/,
+            "loader": "raw-loader"
+        },]
     },
 
     plugins: [
