@@ -3,7 +3,7 @@ export default class Home {
 		
 	}
 
-	afterViewInit(element) {
+	afterViewInit(element: any) {
 		console.log(element)
 	}
 

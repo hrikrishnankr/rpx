@@ -1,5 +1,6 @@
 export default class Nagvigant {
-	constructor(args) {
+	private _events: any;
+	constructor(args?: any) {
 		this._events = {
 			'hashChange': {}
 		};
@@ -7,24 +8,24 @@ export default class Nagvigant {
 		this.register('load',() => this.onHashChange({ newURL: location.href }));
 	}
 
-	on(path, component) {
+	on(path: string, component: any) {
 		this._events.hashChange[path] || (this._events.hashChange[path] = []);
 		this._events.hashChange[path].push(component);
 		return this;
 	}
 
-	register(event, callback) {
+	register(event: string, callback: any) {
 		window.addEventListener(event, (e)=>{
 			callback(e);
 		});
 	}
 
-	getAllPath(url) {
+	getAllPath(url: string) {
 		let hashSplit = (url.split('#')[1] && url.split('#')[1].split('/')) || [];
 		return hashSplit.filter(path => path);
 	}
 
-	onHashChange(event) {
+	onHashChange(event: any) {
 		let allPtahs = this.getAllPath(event.newURL);
 		allPtahs.forEach(path => {
 			this._events.hashChange[path].forEach(component => {

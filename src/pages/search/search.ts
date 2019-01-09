@@ -3,7 +3,7 @@ export default class Search {
 		console.log("Search Class");
 	}
 
-	afterViewInit(element) {
+	afterViewInit(element: any) {
 		console.log(element)
 	}
 
