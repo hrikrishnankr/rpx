@@ -27,7 +27,7 @@ const config = {
     },
 
     resolve: {
-        extensions: ['*', '.js','.ts','.json'],
+        extensions: ['*', '.js', '.ts', '.json'],
         modules: [
             resolve(__dirname, '..', 'node_modules'),
         ],

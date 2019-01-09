@@ -1,6 +1,6 @@
-export default class Home {
+export default class Search {
 	constructor() {
-		
+		console.log("Search Class");
 	}
 
 	afterViewInit(element: any) {
@@ -10,9 +10,10 @@ export default class Home {
 	view() {
 		return `
 			<div>\
-				This is Home\
+				This is Search\
+				<input placeholder='search' name='search'>\
 				<button id='button'>\
-					Click Me\
+					Search\
 				</button>\
 			</div>\
 		`;
