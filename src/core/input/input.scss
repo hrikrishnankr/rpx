@@ -1,0 +1,40 @@
+.group {
+  position: relative;
+  margin: 5px;
+  height: 55px;
+}
+
+input {
+  font-size: 18px;
+  padding: 13px 15px;
+  display: block;
+  width: 300px;
+  border: none;
+  border: 1px solid #757575;
+  border-radius: 5px;
+}
+
+input:focus, input:valid {
+  outline: none;
+  border: 2px solid #1a73e8;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 13px;
+  transition: 0.2s ease all;
+  background: #fff;
+}
+
+input:focus~label,
+input:valid~label {
+  color: #1a73e8;
+  top: -10px;
+  left: 5px;
+  transform: scale(0.9);
+}
