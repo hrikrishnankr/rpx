@@ -15,6 +15,7 @@ export default class Search {
 				<button id='button'>\
 					Search\
 				</button>\
+				<router></router>\
 			</div>\
 		`;
 	}

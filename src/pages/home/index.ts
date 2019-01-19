@@ -1,4 +1,2 @@
-import LoadView from '../../routes/loadView';
-
-const HomePage = () => import('./home').then(module => LoadView.load(module));
+const HomePage = () => import('./home');
 export default HomePage;
