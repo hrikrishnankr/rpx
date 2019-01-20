@@ -10,7 +10,11 @@ navigate
 		component: SearchPage,
 		children: [{
 			path: 'list',
-			component: SearchList,
-			default: true
+			component: SearchList
+		},{
+			path: '**',
+			redirectTo: 'list'
 		}]
+	}).on('**', {
+		redirectTo: 'home'
 	});

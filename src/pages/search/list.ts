@@ -1,11 +1,7 @@
 export default class List {
-	constructor() {
-		console.log("Search Class");
-	}
+	constructor() {}
 
-	afterViewInit(element: any) {
-		console.log(element)
-	}
+	afterViewInit(element: any) {}
 
 	view() {
 		return `

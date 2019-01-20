@@ -1,11 +1,7 @@
 export default class Home {
-	constructor() {
-		
-	}
+	constructor() {}
 
-	afterViewInit(element: any) {
-		console.log(element)
-	}
+	afterViewInit(element: any) {}
 
 	view() {
 		return `
