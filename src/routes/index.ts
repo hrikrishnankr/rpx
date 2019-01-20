@@ -10,6 +10,7 @@ navigate
 		component: SearchPage,
 		children: [{
 			path: 'list',
-			component: SearchList
+			component: SearchList,
+			default: true
 		}]
 	});
