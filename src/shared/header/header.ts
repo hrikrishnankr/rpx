@@ -1,5 +1,11 @@
-export default class Header {
+import './header.scss';
+const APP_SELECTOR: string = 'app-header';
+class Header {
 	constructor() {}
+
+	get selector() {
+		return APP_SELECTOR;
+	}
 
 	afterViewInit(element: any) {}
 
@@ -12,3 +18,5 @@ export default class Header {
 		`;
 	}
 }
+
+export default Header;
